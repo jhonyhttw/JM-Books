@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja de E-books</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background: #ffffff;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #6c63ff;
+            text-decoration: none;
+        }
+
+        header nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        header nav a {
+            text-decoration: none;
+            font-size: 1rem;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #6c63ff;
+        }
+
+        .banner {
+            background: linear-gradient(135deg, #6c63ff, #3b38d1);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+            position: relative;
+        }
+
+        .banner h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .banner p {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+
+        .banner button {
+            background: white;
+            color: #6c63ff;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .banner button:hover {
+            background: #f0f0f0;
+        }
+
+        .categories {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .category {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+            width: 150px;
+        }
+
+        .category:hover {
+            transform: translateY(-5px);
+        }
+
+        .category img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1rem;
+        }
+
+        .category p {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #6c63ff;
+        }
+
+        .products {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .ebook {
+            background-color: white;
+            margin: 1.5rem 0;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .ebook img {
+            width: 120px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .ebook:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .ebook h2 {
+            margin: 0;
+            font-size: 1.8rem;
+            color: #6c63ff;
+        }
+
+        .ebook p {
+            margin: 0.5rem 0;
+            line-height: 1.6;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .ebook a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.8rem 1.5rem;
+            background-color: #6c63ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .ebook a:hover {
+            background-color: #3b38d1;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #6c63ff, #3b38d1);
+            color: white;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Minha Loja</a>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Categorias</a>
+            <a href="#">Promoções</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h1>Bem-vindo à Minha Loja de E-books</h1>
+        <p>Encontre e-books incríveis para transformar sua vida.</p>
+        <button>Explorar Agora</button>
+    </section>
+
+    <section class="categories">
+        <div class="category">
+            <img src="https://via.placeholder.com/80" alt="Categoria">
+            <p>Autoajuda</p>
+        </div>
+        <div class="category">
+            <img src="https://via.placeholder.com/80" alt="Categoria">
+            <p>Negócios</p>
+        </div>
+        <div class="category">
+            <img src="https://via.placeholder.com/80" alt="Categoria">
+            <p>Saúde</p>
+        </div>
+        <div class="category">
+            <img src="https://via.placeholder.com/80" alt="Categoria">
+            <p>Educação</p>
+        </div>
+    </section>
+
+    <main class="products">
+        <section class="ebook">
+            <img src="/mnt/data/NlICW_vGbpY25Zx_k4Cf9.jpg" alt="Capa do E-book">
+            <div>
+                <h2>"Tenho TDAH?"</h2>
+                <p>Descubra tudo sobre o TDAH com este guia prático e informativo. Saiba identificar os sinais e como agir.</p>
+                <a href="#">Comprar por R$ 29,90</a>
+            </div>
+        </section>
+
+        <!-- Adicione mais seções para outros e-books -->
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Minha Loja de E-books. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
